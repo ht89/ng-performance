@@ -1,14 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { ArticleComponent } from './article.component';
+import { AddRandomPipe } from './add-random.pipe';
 import { NgModule } from '@angular/core';
+import { WorkerAppModule } from '@angular/platform-webworker';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddRandomPipe,
+    ArticleComponent
   ],
   imports: [
-    BrowserModule
+    WorkerAppModule
   ],
   providers: [],
   bootstrap: [AppComponent]
